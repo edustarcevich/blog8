@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "account",
 ]
 
 MIDDLEWARE = [
@@ -132,3 +133,5 @@ MEDIAROOT = os.path.join (os.path.dirname (BASE_DIR),"media")
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+#modelos
+AUTH_USER_MODEL = 'account.User'
