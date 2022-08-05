@@ -41,9 +41,10 @@ INSTALLED_APPS = [
     "account",
     "home",
 ]
-
+# agregado: "whitenoise.middleware.WhiteNoiseMiddleware", junto pip install whitenoise
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
