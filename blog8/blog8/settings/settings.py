@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "account",
+    "home",
 ]
 
 MIDDLEWARE = [
@@ -108,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'es-ar'
 
-TIME_ZONE = 'AMERICA/ARGENTINA/BUENOS AIRES'
+TIME_ZONE = 'America/Argentina/Buenos_Aires'
 
 USE_I18N = True
 
@@ -122,7 +123,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join (os.path.dirname(BASE_DIR),"static"),
     )
-    
+
+STATIC_ROOT = BASE_DIR / 'static'
 
 MEDIA_URL = "/media/"
 MEDIAROOT = os.path.join (os.path.dirname (BASE_DIR),"media")
